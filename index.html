@@ -230,32 +230,172 @@
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
                     <!-- CONTENIDO -->
-                    <p>AQUI</p>
-                    <!-- / CONTENIDO -->
+                    <div class="row container-fluid pe-1 py-3">
+                        <div class="col d-flex">
+                            <div class="backspace alignment">
+                                <h1 class="h2 text-center" style="font-size: 210%;" id="arriba">Introduccion</h1>
+                                <b style="font-size: 120%;">Este manual tiene como finalidad presentar toda la información referente al sistema de inventario y facturación de Fresh Supermarket y funcionar como una guía para el uso correcto del programa. Este documento muestra cada parte del programa y cómo usarlo correctamente, presentando las ventanas del sistema, su funcionamiento, las opciones del sistema, como desplazarse por ellas y los botones que integran cada una. Con este manual, se da toda la información necesaria para realizar de manera eficiente todas las operaciones relacionadas al  registro de productos y procesos de facturación</b>
+                                <h1 class="h2 text-center py-4" style="font-size: 210%;" id="origen">Origen del Sistema</h1>
+                                <b style="font-size: 120%;">La empresa Fresh Supermarket, fue creada el 26 de Junio de 2003. Esta empresa fue creada con el objetivo de la venta de productos de necesidades básicas como seria: productos de limpieza e higiene y alimentos al consumidor y se encuentra ubicada en la Av. Andrés Eloy Blanco, Calle 127, municipio Valencia, Estado Carabobo.
+                                    <br>
+                                    <br>
+                                    Esta empresa desde sus inicios, ha manejado un sistema de inventario y facturación manual, controlando así los productos en inventario y las operaciones de compra y venta realizadas, sin embargo, debido a la cantidad de ocurrencias de registros y las limitaciones de este sistema, se han perdido datos de los productos y de los clientes, además de presentar lentitud a la hora de buscar las existencias de la mercancía o información de los clientes, productos y proveedores, siendo fatal para la organización.
+                                    <br>
+                                    <br>
+                                    Es por esto que nace el sistema automatizado de inventario y facturación  para la empresa Fresh Supermarket debido a que se da a destacar la necesidad de un sistema que pueda efectuar operaciones de facturación a clientes de manera eficiente, registrar la información de manera segura y que pueda mantener un control sobre los datos de la empresa tales como: los productos en venta, proveedores de mercancía, mostrar los clientes registrados y las facturas realizadas en el programa. 
+                                    </b>
+                                <h1 class="h2 text-center py-4" style="font-size: 210%;" id="configuracion">Configuración e instalación</h1>
+                                <b style="font-size: 120%;">Requerimientos de hardware y software mínimos para el funcionamiento óptimo del programa:</b>
+                                <div class="py-3" style="font-size: 120%;">
+                                    <li class="px-5 py-2">Procesador Intel Core 2 Duo E8400 o AMD Athlon II X2 255</li>
+                                    <li class="px-5 py-2">4 GB de RAM</li>
+                                    <li class="px-5 py-2">Sistema operativo Windows 7 o superior</li>
+                                    <li class="px-5 py-2">Resolución grafica mínimo 800*600</li>
+                                    <li class="px-5 py-2">SQL Server Management Studio 2014</li>
+                                    <li class="px-5 py-2">Visual Studio 2017</li>
+                                    <li class="px-5 py-2">Archivos msvcr120.dll y sqlserverspatial140.dll de 32 y 64 bits en la carpeta del sistema</li>
+                                </div>
+                                <b style="font-size: 120%;">El programa está contenido en una carpeta la cual contiene todos los archivos necesarios para la correcta ejecución del mismo, el usuario debe de buscar el archivo llamado inventario-facturacion.exe para poder ejecutar el programa</b>
+                                <h1 class="h2 text-center py-3" style="font-size: 210%;">Descripción de iconos y teclas de función</h1>
+                                <b style="font-size: 120%;">En el sistema, aparece una serie de iconos los cuales funcionan como botones que al pulsarlos, tienen cierta función. Para desplazarse por los campos y botones, existen dos maneras, con el cursor, o con el teclado, ya que el teclado contiene una serie de teclas que permiten esto, a estas teclas se les conoce como teclas de función. A continuación, se mostrarán los iconos del sistema, su funcionamiento y las teclas de función para desplazarse por él.<br>
+                                <h1 class="h2 text-center py-3" style="font-size: 210%;" id="iconos">Iconos</h1>
+                                    <h2 class="h2 text-center py-3" style="font-size: 180%;">Botones de las Ventana de Inicio y Divisa</h2>
+                                        <div class="container">
+                                            <div class="row">
+                                                <img src="Imagenes/aceptar.png" alt="" class="img px-5">
+                                                    <b class="col-9">El botón de “Aceptar” permite acceder al siguiente formulario con la condición de que los datos ingresados sean los correctos, de lo contrario, mostrará un mensaje de error el cual le dirá que intente de nuevo.</b>
+                            </div>
+                        </div>
+                        <div class="container py-5">
+                            <div class="row">
+                                <img src="Imagenes/cancelar.png" alt="" class="img px-5">
+                                <b class="col-9">El botón de “Cancelar” permite salir del sistema, al pulsarlo, aparece un mensaje indicando si está seguro de su respuesta, si está seguro, saldrá del sistema, de lo contario, volverá al formulario de Inicio</b>
+                            </div>
+                        </div>
+                        <h2 class="h2 text-center py-3" style="font-size: 180%;">Botones de las ventanas de Compañía, Usuarios, Clientes, Productos, Entradas y Salidas y Facturación</h2>
+                        <div class="container py-3">
+                            <div class="row">
+                                <img src="Imagenes/añadir.png" alt="" class="img px-5">
+                                <b class="col-9 py-5">El botón “Añadir” permite ingresar nuevos datos</b>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <img src="Imagenes/buscar.png" alt="" class="img px-5">
+                                <b class="col-9 py-5">El botón “Buscar” permite realizar una búsqueda de información en la base de datos colocando los datos que sean de interés para   el usuario</b>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <img src="Imagenes/modificar.png" alt="" class="img px-5">
+                                <b class="col-9 py-5">Permite modificar registros de la base de datos del sistema</b>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <img src="Imagenes/guardar.png" alt="" class="img px-5">
+                                <b class="col-9 py-5">Permite guardar los datos que el usuario ingrese en algún campo en la base de datos.</b>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <img src="Imagenes/Eliminar.png" alt="" class="img px-5">
+                                <b class="col-9 py-5">Elimina los registros de la fila seleccionada del sistema.</b>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <img src="Imagenes/salir.png" alt="" class="img px-5">
+                                <b class="col-9 py-5">Permite salir de la ventana y volver al Menú </b>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <img src="Imagenes/cancelar2.png" alt="" class="img px-5">
+                                <b class="col-9 py-5">Permite cancelar la operación que se está realizando.</b>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <img src="Imagenes/confirmar.png" alt="" class="img px-5">
+                                <b class="col-9 py-5">Permite confirmar la operación efectuada.</b>
+                            </div>
+                        </div>
+                        <h2 class="h2 text-center py-3" style="font-size: 180%;" id="funcion">Teclas de funcion</h2>
+                        <div class="container py-3">
+                            <div class="row">
+                                <img src="Imagenes/teclado.png" alt="">
+                                <b class="text-center" style="font-size: 140%;">Estas teclas permiten el desplazamiento por las ventanas. Estas son:</b>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <img src="Imagenes/tab.png" alt="" class="img px-5">
+                                <b class="col-9 py-5">El tabulador, también denominado como “Tab” permite moverse hacia adelante entre los diferentes iconos y campos del sistema.</b>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <div class="col-12 img py-4">
+                                    <img src="Imagenes/tabshift.png" alt="" class="img2">
+                                </div>
+                                <b class="col-9 py-3">La combinación entre la tecla “Shift” también representada en forma de una flecha hacia arriba, y la tecla “Tab” permite regresar entre los diferentes iconos y campos del sistema. Para que funcione hay que dejar pulsado la tecla “Shift” y pulsar la tecla “Tab” según los espacios que desee moverse</b>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <div class="col-12 img">
+                                    <img src="Imagenes/space.png" alt="" class="img2">
+                                </div>
+                                <b class="col-9 py-3">La tecla “Espacio” o “Space” permite marcar una casilla de chequeo </b>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <img src="Imagenes/f4.png" alt="" class="img px-5">
+                                <b class="col-9 py-5">La tecla ”F4” permite abrir un cuadro de opciones desplegable</b>
+                            </div>
+                        </div>
+                        <div class="container py-5">
+                            <div class="row">
+                                <img src="Imagenes/teclas.png" alt="" class="img px-5">
+                                <b class="col-9 py-5">Las flechas permiten moverse entre los caracteres o elegir una opción dentro del cuadro de opciones desplegable</b>
+                            </div>
+                        </div>
+                        <h1 class="h2 text-center py-4" style="font-size: 210%;" id="menu">Descripción de las Pantallas del Menú</h1>
+                        <h2 class="h2 text-center py-3" style="font-size: 180%;" id="origen">Ménu</h2>
+                        <div class="container py-3">
+                            <div class="row">
+                                <img src="Imagenes/menu.png" alt="" class="img4 px-5 w-75">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Content wrapper -->
+                <!-- / CONTENIDO -->
             </div>
-            <!-- / Layout page -->
+            <!-- Content wrapper -->
         </div>
+        <!-- / Layout page -->
+    </div>
+    <div class="buy-now">
+        <!-- Boton de ir arriba -->
         <div class="buy-now">
-            <!-- Boton de ir arriba -->
-            <div class="buy-now">
-                <a href="#arriba" class="btn btn-success btn-buy-now">Ir Arriba</a>
-            </div>
-            <!-- Core JS -->
-            <!-- build:js assets/vendor/js/core.js -->
-            <script src="assets/vendor/libs/jquery/jquery.js"></script>
-            <script src="assets/vendor/libs/popper/popper.js"></script>
-            <script src="assets/vendor/js/bootstrap.js"></script>
-            <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-            <script src="assets/vendor/js/menu.js"></script>
-            <!-- endbuild -->
-            <!-- Vendors JS -->
-            <!-- Main JS -->
-            <script src="assets/js/main.js"></script>
-            <!-- Page JS -->
-            <!-- Place this tag in your head or just before your close body tag. -->
-            <script async defer src="https://buttons.github.io/buttons.js"></script>
+            <a href="#arriba" class="btn btn-success btn-buy-now">Ir Arriba</a>
+        </div>
+        <!-- Core JS -->
+        <!-- build:js assets/vendor/js/core.js -->
+        <script src="assets/vendor/libs/jquery/jquery.js"></script>
+        <script src="assets/vendor/libs/popper/popper.js"></script>
+        <script src="assets/vendor/js/bootstrap.js"></script>
+        <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+        <script src="assets/vendor/js/menu.js"></script>
+        <!-- endbuild -->
+        <!-- Vendors JS -->
+        <!-- Main JS -->
+        <script src="assets/js/main.js"></script>
+        <!-- Page JS -->
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 </html>

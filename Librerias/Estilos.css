@@ -17,3 +17,30 @@
 }
 
 .menu-link {}
+
+.backspace {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: justify;
+}
+
+.alignment {
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.img {
+    margin-left: 5%;
+    width: 20%;
+}
+
+.img2 {
+    margin-left: -35%;
+}
+
+.img4 {
+    margin-left: 13%;
+}
