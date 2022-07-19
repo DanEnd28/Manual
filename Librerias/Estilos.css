@@ -33,8 +33,9 @@
 }
 
 .img {
+    height: auto;
     margin-left: 5%;
-    width: 20%;
+    max-width: 20%
 }
 
 .img2 {

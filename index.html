@@ -230,145 +230,297 @@
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
                     <!-- CONTENIDO -->
-                    <div class="row container-fluid pe-1 py-3">
-                        <div class="col d-flex">
-                            <div class="backspace alignment">
-                                <h1 class="h2 text-center" style="font-size: 210%;" id="arriba">Introduccion</h1>
-                                <b style="font-size: 120%;">Este manual tiene como finalidad presentar toda la información referente al sistema de inventario y facturación de Fresh Supermarket y funcionar como una guía para el uso correcto del programa. Este documento muestra cada parte del programa y cómo usarlo correctamente, presentando las ventanas del sistema, su funcionamiento, las opciones del sistema, como desplazarse por ellas y los botones que integran cada una. Con este manual, se da toda la información necesaria para realizar de manera eficiente todas las operaciones relacionadas al  registro de productos y procesos de facturación</b>
-                                <h1 class="h2 text-center py-4" style="font-size: 210%;" id="origen">Origen del Sistema</h1>
-                                <b style="font-size: 120%;">La empresa Fresh Supermarket, fue creada el 26 de Junio de 2003. Esta empresa fue creada con el objetivo de la venta de productos de necesidades básicas como seria: productos de limpieza e higiene y alimentos al consumidor y se encuentra ubicada en la Av. Andrés Eloy Blanco, Calle 127, municipio Valencia, Estado Carabobo.
-                                    <br>
-                                    <br>
-                                    Esta empresa desde sus inicios, ha manejado un sistema de inventario y facturación manual, controlando así los productos en inventario y las operaciones de compra y venta realizadas, sin embargo, debido a la cantidad de ocurrencias de registros y las limitaciones de este sistema, se han perdido datos de los productos y de los clientes, además de presentar lentitud a la hora de buscar las existencias de la mercancía o información de los clientes, productos y proveedores, siendo fatal para la organización.
-                                    <br>
-                                    <br>
-                                    Es por esto que nace el sistema automatizado de inventario y facturación  para la empresa Fresh Supermarket debido a que se da a destacar la necesidad de un sistema que pueda efectuar operaciones de facturación a clientes de manera eficiente, registrar la información de manera segura y que pueda mantener un control sobre los datos de la empresa tales como: los productos en venta, proveedores de mercancía, mostrar los clientes registrados y las facturas realizadas en el programa. 
-                                    </b>
-                                <h1 class="h2 text-center py-4" style="font-size: 210%;" id="configuracion">Configuración e instalación</h1>
-                                <b style="font-size: 120%;">Requerimientos de hardware y software mínimos para el funcionamiento óptimo del programa:</b>
-                                <div class="py-3" style="font-size: 120%;">
-                                    <li class="px-5 py-2">Procesador Intel Core 2 Duo E8400 o AMD Athlon II X2 255</li>
-                                    <li class="px-5 py-2">4 GB de RAM</li>
-                                    <li class="px-5 py-2">Sistema operativo Windows 7 o superior</li>
-                                    <li class="px-5 py-2">Resolución grafica mínimo 800*600</li>
-                                    <li class="px-5 py-2">SQL Server Management Studio 2014</li>
-                                    <li class="px-5 py-2">Visual Studio 2017</li>
-                                    <li class="px-5 py-2">Archivos msvcr120.dll y sqlserverspatial140.dll de 32 y 64 bits en la carpeta del sistema</li>
-                                </div>
-                                <b style="font-size: 120%;">El programa está contenido en una carpeta la cual contiene todos los archivos necesarios para la correcta ejecución del mismo, el usuario debe de buscar el archivo llamado inventario-facturacion.exe para poder ejecutar el programa</b>
-                                <h1 class="h2 text-center py-3" style="font-size: 210%;" id="iconos">Descripción de iconos y teclas de función</h1>
-                                <b style="font-size: 120%;">En el sistema, aparece una serie de iconos los cuales funcionan como botones que al pulsarlos, tienen cierta función. Para desplazarse por los campos y botones, existen dos maneras, con el cursor, o con el teclado, ya que el teclado contiene una serie de teclas que permiten esto, a estas teclas se les conoce como teclas de función. A continuación, se mostrarán los iconos del sistema, su funcionamiento y las teclas de función para desplazarse por él.<br>
-                                <h1 class="h2 text-center py-3" style="font-size: 210%;">Iconos</h1>
-                                    <h2 class="h2 text-center py-3" style="font-size: 180%;">Botones de las Ventana de Inicio y Divisa</h2>
-                                        <div class="container">
-                                            <div class="row">
-                                                <img src="Imagenes/aceptar.png" alt="" class="img px-5">
-                                                    <b class="col-9">El botón de “Aceptar” permite acceder al siguiente formulario con la condición de que los datos ingresados sean los correctos, de lo contrario, mostrará un mensaje de error el cual le dirá que intente de nuevo.</b>
+                    <div class="row container-fluid pe-2 py-3 ps-4">
+                        <div class="backspace alignment">
+                            <h1 class="h2 text-center" style="font-size: 210%;" id="arriba">Introduccion</h1>
+                            <b style="font-size: 120%;">Este manual tiene como finalidad presentar toda la información referente al sistema de inventario y facturación de Fresh Supermarket y funcionar como una guía para el uso correcto del programa. Este documento muestra cada parte del programa y cómo usarlo correctamente, presentando las ventanas del sistema, su funcionamiento, las opciones del sistema, como desplazarse por ellas y los botones que integran cada una. Con este manual, se da toda la información necesaria para realizar de manera eficiente todas las operaciones relacionadas al  registro de productos y procesos de facturación</b>
+                            <h1 class="h2 text-center pt-5" style="font-size: 210%;" id="origen">Origen del Sistema</h1>
+                            <b style="font-size: 120%;">La empresa Fresh Supermarket, fue creada el 26 de Junio de 2003. Esta empresa fue creada con el objetivo de la venta de productos de necesidades básicas como seria: productos de limpieza e higiene y alimentos al consumidor y se encuentra ubicada en la Av. Andrés Eloy Blanco, Calle 127, municipio Valencia, Estado Carabobo.
+                            <br>
+                            <br>
+                            Esta empresa desde sus inicios, ha manejado un sistema de inventario y facturación manual, controlando así los productos en inventario y las operaciones de compra y venta realizadas, sin embargo, debido a la cantidad de ocurrencias de registros y las limitaciones de este sistema, se han perdido datos de los productos y de los clientes, además de presentar lentitud a la hora de buscar las existencias de la mercancía o información de los clientes, productos y proveedores, siendo fatal para la organización.
+                            <br>
+                            <br>
+                            Es por esto que nace el sistema automatizado de inventario y facturación  para la empresa Fresh Supermarket debido a que se da a destacar la necesidad de un sistema que pueda efectuar operaciones de facturación a clientes de manera eficiente, registrar la información de manera segura y que pueda mantener un control sobre los datos de la empresa tales como: los productos en venta, proveedores de mercancía, mostrar los clientes registrados y las facturas realizadas en el programa. 
+                            <h1 class="h2 text-center pt-5" style="font-size: 210%;" id="configuracion">Configuración e instalación</h1>
+                            <b style="font-size: 120%;">Requerimientos de hardware y software mínimos para el funcionamiento óptimo del programa:</b>
+                            <div class="py-3">
+                                <li class="px-5 py-2">Procesador Intel Core 2 Duo E8400 o AMD Athlon II X2 255</li>
+                                <li class="px-5 py-2">4 GB de RAM</li>
+                                <li class="px-5 py-2">Sistema operativo Windows 7 o superior</li>
+                                <li class="px-5 py-2">Resolución grafica mínimo 800*600</li>
+                                <li class="px-5 py-2">SQL Server Management Studio 2014</li>
+                                <li class="px-5 py-2">Visual Studio 2017</li>
+                                <li class="px-5 py-2">Archivos msvcr120.dll y sqlserverspatial140.dll de 32 y 64 bits en la carpeta del sistema</li>
                             </div>
-                        </div>
+                            <b>El programa está contenido en una carpeta la cual contiene todos los archivos necesarios para la correcta ejecución del mismo, el usuario debe de buscar el archivo llamado inventario-facturacion.exe para poder ejecutar el programa</b>
+                            <h1 class="h2 text-center pt-5" style="font-size: 210%;" id="iconos">Descripción de iconos y teclas de función</h1>
+                            <b>En el sistema, aparece una serie de iconos los cuales funcionan como botones que al pulsarlos, tienen cierta función. Para desplazarse por los campos y botones, existen dos maneras, con el cursor, o con el teclado, ya que el teclado contiene una serie de teclas que permiten esto, a estas teclas se les conoce como teclas de función. A continuación, se mostrarán los iconos del sistema, su funcionamiento y las teclas de función para desplazarse por él.</b>
+                            <br>
+                            <h1 class="h2 text-center py-5" style="font-size: 210%;">Iconos</h1>
+                            <h2 class="h2 text-center pb-5" style="font-size: 180%;">Botones de las Ventana de Inicio y Divisa</h2>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg text-center">
+                                            <img src="Imagenes/aceptar.png" alt="" class="img-fluid p-2">                                                           
+                                        </div>    
+                                        <div class="col-xl-9 col-lg-12">
+                                            <b>El botón de “Aceptar” permite acceder al siguiente formulario con la condición de que los datos ingresados sean los correctos, de lo contrario, mostrará un mensaje de error el cual le dirá que intente de nuevo.</b>
+                                        </div>
+                                    </div>
+                                </div>
                         <div class="container py-5">
                             <div class="row">
-                                <img src="Imagenes/cancelar.png" alt="" class="img px-5">
-                                <b class="col-9">El botón de “Cancelar” permite salir del sistema, al pulsarlo, aparece un mensaje indicando si está seguro de su respuesta, si está seguro, saldrá del sistema, de lo contario, volverá al formulario de Inicio</b>
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/cancelar.png" alt="" class="img-fluid p-2">
+                                </div>
+                                <div class="col-xl-9 col-lg-12">
+                                    <b>El botón de “Cancelar” permite salir del sistema, al pulsarlo, aparece un mensaje indicando si está seguro de su respuesta, si está seguro, saldrá del sistema, de lo contario, volverá al formulario de Inicio</b>
+                                </div>
                             </div>
                         </div>
                         <h2 class="h2 text-center py-3" style="font-size: 180%;">Botones de las ventanas de Compañía, Usuarios, Clientes, Productos, Entradas y Salidas y Facturación</h2>
                         <div class="container py-3">
                             <div class="row">
-                                <img src="Imagenes/añadir.png" alt="" class="img px-5">
-                                <b class="col-9 py-5">El botón “Añadir” permite ingresar nuevos datos</b>
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/añadir.png" alt="" class="img-fluid px-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
+                                    <b>El botón “Añadir” permite ingresar nuevos datos</b>
+                                </div>
                             </div>
                         </div>
                         <div class="container py-3">
                             <div class="row">
-                                <img src="Imagenes/buscar.png" alt="" class="img px-5">
-                                <b class="col-9 py-5">El botón “Buscar” permite realizar una búsqueda de información en la base de datos colocando los datos que sean de interés para   el usuario</b>
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/buscar.png" alt="" class="img-fluid px-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
+                                    <b>El botón “Buscar” permite realizar una búsqueda de información en la base de datos colocando los datos que sean de interés para   el usuario</b>
+                                </div>
                             </div>
                         </div>
                         <div class="container py-3">
                             <div class="row">
-                                <img src="Imagenes/modificar.png" alt="" class="img px-5">
-                                <b class="col-9 py-5">Permite modificar registros de la base de datos del sistema</b>
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/modificar.png" alt="" class="img-fluid px-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
+                                    <b>Permite modificar registros de la base de datos del sistema</b>
+                                </div>
                             </div>
                         </div>
                         <div class="container py-3">
                             <div class="row">
-                                <img src="Imagenes/guardar.png" alt="" class="img px-5">
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/guardar.png" alt="" class="img-fluid px-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
                                 <b class="col-9 py-5">Permite guardar los datos que el usuario ingrese en algún campo en la base de datos.</b>
+                                </div>
                             </div>
                         </div>
                         <div class="container py-3">
                             <div class="row">
-                                <img src="Imagenes/Eliminar.png" alt="" class="img px-5">
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/Eliminar.png" alt="" class="img-fluid px-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
                                 <b class="col-9 py-5">Elimina los registros de la fila seleccionada del sistema.</b>
+                                </div>
                             </div>
                         </div>
                         <div class="container py-3">
                             <div class="row">
-                                <img src="Imagenes/salir.png" alt="" class="img px-5">
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/salir.png" alt="" class="img-fluid px-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
                                 <b class="col-9 py-5">Permite salir de la ventana y volver al Menú </b>
+                                </div>
                             </div>
                         </div>
                         <div class="container py-3">
                             <div class="row">
-                                <img src="Imagenes/cancelar2.png" alt="" class="img px-5">
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/cancelar2.png" alt="" class="img-fluid px-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
                                 <b class="col-9 py-5">Permite cancelar la operación que se está realizando.</b>
+                                </div>
                             </div>
                         </div>
                         <div class="container py-3">
                             <div class="row">
-                                <img src="Imagenes/confirmar.png" alt="" class="img px-5">
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/confirmar.png" alt="" class="img-fluid px-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
                                 <b class="col-9 py-5">Permite confirmar la operación efectuada.</b>
+                                </div>
                             </div>
                         </div>
                         <h2 class="h2 text-center py-3" style="font-size: 180%;" id="teclas">Teclas de funcion</h2>
-                        <div class="container py-3">
+                        <div class="container">
                             <div class="row">
-                                <img src="Imagenes/teclado.png" alt="">
-                                <b class="text-center" style="font-size: 140%;">Estas teclas permiten el desplazamiento por las ventanas. Estas son:</b>
-                            </div>
-                        </div>
-                        <div class="container py-3">
-                            <div class="row">
-                                <img src="Imagenes/tab.png" alt="" class="img px-5">
-                                <b class="col-9 py-5">El tabulador, también denominado como “Tab” permite moverse hacia adelante entre los diferentes iconos y campos del sistema.</b>
-                            </div>
-                        </div>
-                        <div class="container py-3">
-                            <div class="row">
-                                <div class="col-12 img py-4">
-                                    <img src="Imagenes/tabshift.png" alt="" class="img2">
+                                <div class="col-lg-12 text-center">
+                                    <img src="Imagenes/teclado.png" alt="" class="img-fluid px-5">
                                 </div>
-                                <b class="col-9 py-3">La combinación entre la tecla “Shift” también representada en forma de una flecha hacia arriba, y la tecla “Tab” permite regresar entre los diferentes iconos y campos del sistema. Para que funcione hay que dejar pulsado la tecla “Shift” y pulsar la tecla “Tab” según los espacios que desee moverse</b>
-                            </div>
-                        </div>
-                        <div class="container py-3">
-                            <div class="row">
-                                <div class="col-12 img">
-                                    <img src="Imagenes/space.png" alt="" class="img2">
+                                <div class="text-center">
+                                    <b style="font-size: 140%;">Estas teclas permiten el desplazamiento por las ventanas. Estas son:</b>
                                 </div>
-                                <b class="col-9 py-3">La tecla “Espacio” o “Space” permite marcar una casilla de chequeo </b>
                             </div>
                         </div>
                         <div class="container py-3">
                             <div class="row">
-                                <img src="Imagenes/f4.png" alt="" class="img px-5">
-                                <b class="col-9 py-5">La tecla ”F4” permite abrir un cuadro de opciones desplegable</b>
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/tab.png" alt="" class="img-fluid px-5 py-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
+                                    <b class="col-9 py-5">El tabulador, también denominado como “Tab” permite moverse hacia adelante entre los diferentes iconos y campos del sistema.</b>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <div class="col-lg col-xl-12 col-xxl-3 text-center">
+                                    <img src="Imagenes/tabshift.png" alt="" class="img-fluid px-5 py-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
+                                    <b class="col-9 py-3">La combinación entre la tecla “Shift” también representada en forma de una flecha hacia arriba, y la tecla “Tab” permite regresar entre los diferentes iconos y campos del sistema. Para que funcione hay que dejar pulsado la tecla “Shift” y pulsar la tecla “Tab” según los espacios que desee moverse</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/space.png" alt="" class="img-fluid px-5 py-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
+                                    <b class="col-9 py-3">La tecla “Espacio” o “Space” permite marcar una casilla de chequeo </b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="row">
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/f4.png" alt="" class="img-fluid px-5 py-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
+                                    <b class="col-9 py-5">La tecla ”F4” permite abrir un cuadro de opciones desplegable</b>
+                                </div>
                             </div>
                         </div>
                         <div class="container py-5">
                             <div class="row">
-                                <img src="Imagenes/teclas.png" alt="" class="img px-5">
-                                <b class="col-9 py-5">Las flechas permiten moverse entre los caracteres o elegir una opción dentro del cuadro de opciones desplegable</b>
+                                <div class="col-lg text-center">
+                                    <img src="Imagenes/teclas.png" alt="" class="img-fluid px-5 py-5">
+                                </div>
+                                <div class="col-xl-9 col-lg-12 py-5">
+                                    <b class="col-9 py-5">Las flechas permiten moverse entre los caracteres o elegir una opción dentro del cuadro de opciones desplegable</b>
+                                </div>
                             </div>
                         </div>
                         <h1 class="h2 text-center py-4" style="font-size: 210%;" id="menu">Descripción de las Pantallas del Menú</h1>
                         <h2 class="h2 text-center py-3" style="font-size: 180%;" id="origen">Ménu</h2>
-                        <div class="container py-3">
-                            <div class="row">
-                                <img src="Imagenes/menu.png" alt="" class="img4 px-5 w-75">
+                            <div class="row container-fluid">
+                                <div class="col-12 text-center">
+                                    <img src="Imagenes/menu.png" alt="" class="img-fluid px-5 py-5">
+                                </div>
                             </div>
                         </div>
+                        El menú es la sección más importante del programa. En esta ventana, se presenta una barra de opciones a nivel superior y una barra de estado a nivel inferior. 
+                        <h2 class="h2 text-center pt-5" style="font-size: 180%;" id="origen">Barra Superior del Menú</h2>
+                        <div class="row container-fluid">
+                            <div class="col-xl-12 text-center">
+                                <img src="Imagenes/Barra_superior_menu.png" alt="" class="img-fluid px-5 py-5">
+                            </div>
+                        </div>
+                        En la barra superior del menú, se presentan las siguientes opciones:
+                        <div class="py-3" style="font-size: 100%;">
+                            <li class="px-5 py-2">Actualización: permite acceder a las ventanas: Compañía, Usuarios,  Clientes, Proveedores y Productos.</li>
+                            <div class="col-xl-12 text-center">
+                                <img src="Imagenes/Actualizacion.png" alt="" class="img-fluid px-5 py-5">
+                            </div>
+                            <li class="px-5 py-2">Movimientos: permite acceder a las ventanas Entradas y Salidas y Facturación.</li>
+                            <div class="col-xl-12 text-center">
+                                <img src="Imagenes/Movimientos.png" alt="" class="img-fluid px-5 py-5">
+                            </div>
+                            <li class="px-5 py-2">Listado General: permite acceder a las pantallas de reportes de entradas y salidas y de Facturación. </li>
+                            <div class="col-xl-12 text-center">
+                                <img src="Imagenes/Listado_general.png" alt="" class="img-fluid px-5 py-5">
+                            </div>
+                            <li class="px-5 py-2">Cerrar Sesión: Terminó las operaciones del sistema y vuelve a la ventana de Inicio.</li>
+                            <li class="px-5 py-2">Salir: Permite salir del sistema.</li>
+                            <br>
+                            Cabe destacar, que según el usuario que se elija, algunas opciones podrán estar inhabilitadas.
+                            <br>
+                            <li class="px-5 py-4">Barra de Opciones (admin)</li>
+                            <div class="col-xl-12 text-center">
+                                <img src="Imagenes/barraadmin.png" alt="" class="img-fluid px-5 py-5">
+                            </div>
+                            <li class="px-5 py-4">Barra de Opciones (gerente)</li>
+                            <div class="col-xl-12 text-center">
+                                <img src="Imagenes/barragerente.png" alt="" class="img-fluid px-5 py-5">
+                            </div>
+                            <li class="px-5 py-4">Barra de Opciones (usuario)</li>
+                            <div class="col-xl-12 text-center">
+                                <img src="Imagenes/barragerente.png" alt="" class="img-fluid px-5 py-5">
+                            </div>
+                        </div>
+                        <h2 class="h2 text-center pt-5" style="font-size: 180%;" id="origen">Barra Inferior del Menú</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/barrainferior.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La barra inferior se divide en tres secciones, las cuales son: Usuario, Divisa y Fecha. Esta mostrará el usuario que haya ingresado al sistema, el valor en divisa registrado y la fecha y hora de la computadora
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/barraUDFH.png" alt="" class="img-fluid px-5 py-5">
+                        </div>  
+                        <h2 class="h2 text-center pt-5" style="font-size: 180%;" id="origen">Ventana de Compañía</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/compañia.png" alt="" class="img-fluid px-5 py-5">
+                        </div>     
+                        Dentro de la ventana de compañía, se puede añadir, buscar, modificar o eliminar los datos de la empresa que va a estar asociada al sistema. Al asociar una empresa al sistema, permite usar sus datos para hacer reportes de compra de productos a proveedores o para seleccionar su información al realizar un proceso de facturación
+                        <h2 class="h2 text-center pt-5" style="font-size: 180%;" id="origen">Ventana de Usuarios</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/usuarios.png" alt="" class="img-fluid px-5 py-5">
+                        </div>     
+                        La ventana de Usuarios permite agregar, modificar o eliminar los datos correspondientes a un usuario. Para añadir un usuario, se debe colocar el nombre en el campo [Usuario], la contraseña en el campo [Contraseña], y para el nivel que va a tener se debe abrir el menú desplegable en [Nivel de Acceso], luego presionar el botón añadir. 
+                        <br>
+                        <br>
+                        Por otra parte, para modificar, se debe seleccionar el usuario a modificar y colocar en el campo [Contraseña] o [Nivel de Acceso] el aspecto que se quiera cambiar del usuario
+                        <br>
+                        <br>
+                        Ahora, para eliminar, se ingresa el nombre del usuario en el campo [Usuario] o se puede seleccionar la barra de la derecha y se hace doble click en el nombre que se desea eliminar, seguido a esto, pulsar eliminar, pedirá confirmación, de estar seguro, pulse “Si”. Para salir de esta ventana, pulse cancelar
+                        <h2 class="h2 text-center pt-5" style="font-size: 180%;" id="origen">Ventana de Clientes</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/clientes.png" alt="" class="img-fluid px-5 py-5">
+                        </div>     
+                        La ventana de clientes permite registrar un nuevo cliente, o en su defecto buscar un cliente ya registrado, esto con el fin de usar sus datos para elaborar un proceso de facturación. Esta ventana también permite modificar los datos de un cliente o de ser necesario, puede eliminar sus datos.
+                        <h2 class="h2 text-center pt-5" style="font-size: 180%;" id="origen">Ventana de Proveedores</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/proveedores.png" alt="" class="img-fluid px-5 py-5">
+                        </div> 
+                        La ventana de Proveedores permite agregar, buscar, modificar o eliminar los datos de un proveedor de mercancía. 
+                        <h2 class="h2 text-center pt-5" style="font-size: 180%;" id="origen">Ventana de Productos</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/productos.png" alt="" class="img-fluid px-5 py-5">
+                        </div> 
+                        La ventana de productos permite agregar, buscar, modificar o eliminar un producto. En esta ventana se puede visualizar la descripción del producto, su unidad, la ubicación dentro del almacén, su costo, su precio y cuantas existencias quedan del producto.
+                        <h2 class="h2 text-center pt-5" style="font-size: 180%;" id="origen">Ventana de Entradas y Salidas</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/VES.png" alt="" class="img-fluid px-5 py-5">
+                        </div> 
+                        La ventana de Entradas y salidas permite añadir, buscar o eliminar un movimiento del sistema, esta se usa para ingresar o retirar un producto del sistema. Para comenzar esta operación, debe elegir el proveedor dentro de la lista desplegable, luego elegir el tipo de movimiento, ya sea entrada o salida, y posteriormente, elegir el producto a retirar o añadir al sistema.
+                        <h2 class="h2 text-center pt-5" style="font-size: 180%;" id="origen">Ventana de Facturación</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/facturacion.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana de Facturación tiene como función añadir, eliminar o buscar una factura en el sistema. Al añadir una factura, se inicia una nueva operación de facturación, registrando los datos de la factura, los datos del cliente y los datos de la compra. 
+                        <h2 class="h2 text-center pt-5" style="font-size: 180%;" id="origen">Ventana de Facturación</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/facturacion.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana de Facturación tiene como función añadir, eliminar o buscar una factura en el sistema. Al añadir una factura, se inicia una nueva operación de facturación, registrando los datos de la factura, los datos del cliente y los datos de la compra.
                     </div>
                 </div>
                 <!-- / CONTENIDO -->
