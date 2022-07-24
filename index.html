@@ -194,7 +194,14 @@
                         <ul class="menu-sub">
                             <li class="menu-item">
                                 <a href="" class="menu-link">
-                                    <div data-i18n="">7.1 Ventana de Listado</div>
+                                    <div data-i18n="">7.1 Listado de entrada y salida</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="" class="menu-link">
+                                    <div data-i18n="">7.2 Listado de facturas</div>
                                 </a>
                             </li>
                         </ul>
@@ -230,7 +237,7 @@
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
                     <!-- CONTENIDO -->
-                    <div class="row container-fluid pe-2 py-3 ps-4">
+                    <div class="row container-fluid pe-3 py-3 ps-5">
                         <div class="backspace alignment">
                             <h1 class="h2 text-center" style="font-size: 210%;" id="arriba">Introduccion</h1>
                             <b style="font-size: 120%;">Este manual tiene como finalidad presentar toda la información referente al sistema de inventario y facturación de Fresh Supermarket y funcionar como una guía para el uso correcto del programa. Este documento muestra cada parte del programa y cómo usarlo correctamente, presentando las ventanas del sistema, su funcionamiento, las opciones del sistema, como desplazarse por ellas y los botones que integran cada una. Con este manual, se da toda la información necesaria para realizar de manera eficiente todas las operaciones relacionadas al  registro de productos y procesos de facturación</b>
@@ -521,7 +528,404 @@
                             <img src="Imagenes/facturacion.png" alt="" class="img-fluid px-5 py-5">
                         </div>
                         La ventana de Facturación tiene como función añadir, eliminar o buscar una factura en el sistema. Al añadir una factura, se inicia una nueva operación de facturación, registrando los datos de la factura, los datos del cliente y los datos de la compra.
-                    </div>
+                        <h2 class="h2 text-center pt-5" style="font-size: 180%;" id="origen">Ventana de listado Entradas y Salidas</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/VRentradasalida.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana de listado de entradas y salidas tiene como función generar un reporte de los movimientos de entrada y salida, dependiendo del rango de fecha escogido.
+                        <h2 class="h2 text-center pt-5" style="font-size: 180%;" id="origen">Ventana de listado Facturas</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Lfactura.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana de listado de facturas tiene como función generar un reporte de las facturas, dependiendo del rango de fecha escogido.
+                        <h1 class="h2 text-center py-4" style="font-size: 210%;" id="menu">Descripción de Entrada de Datos</h1>
+                        <h2 class="h2 text-center py-3" style="font-size: 180%;" id="origen">Inicio</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Inicio.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana de inicio es la ventana de acceso al sistema. Para ingresar al sistema, debe tener en cuenta el usuario y contraseña para acceder a él, ya que de lo contrario, no podrá acceder. 
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/usuarios1.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Cabe acotar, que cada usuario cuenta con una serie de permisos de acceso distinto según el nivel que tenga, por lo cual debe tener en cuenta cual elegir a la hora de ingresar al sistema. Los diferentes permisos según el usuario son:
+                        <div class="py-3">
+                            <li class="px-5 py-2">admin (Nivel 1): Tiene acceso a todas las ventanas del programa</li>
+                            <li class="px-5 py-2">gerente (Nivel 2): No tiene acceso a la ventana “Usuarios”</li>
+                            <li class="px-5 py-2">user (Nivel 3): No tiene acceso a las ventanas “Usuarios” y “Compañía”</li>
+                        </div>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/incio1.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        De querer visualizar la contraseña, puede marcar la casilla “Mostrar Contraseña”
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/inicio2.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Luego de colocar los datos, debe pulsar “ACEPTAR”. 
+                        <br>
+                        <br>
+                        El formulario de inicio está diseñado para que si llegara a ingresar datos incorrectos el sistema devolverá un mensaje indicando que los datos de ingreso no son válidos, e invitando al usuario a intentar nuevamente. Se debe tener en cuenta que tanto el nombre del usuario como de la contraseña se deben colocar en minúsculas, ya que está almacenado de esta manera, de colocarlo en mayúscula, el sistema lo detectará como un error y tendrá que intentar nuevamente. 
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/incio3.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Por otra parte, de fallar 3 veces seguidas, el sistema se cerrará y tendrá que volver a ejecutar el programa.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/inicio4.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        En otro caso, si desea salir del sistema, pulse el botón “Cancelar”, al pulsarlo, saldrá en pantalla un mensaje indicando si está seguro que quiere salir del sistema, si está seguro, seleccione la opción “si”, de lo contrario, seleccione “no”; Al seleccionar “no”, volverá a la ventana de inicio.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/inicio5.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        <h2 class="h2 text-center" style="font-size: 180%;" id="origen">Divisa</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/valor.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana Divisa consiste en establecer la tasa de cambio de moneda de “Dólar” a “Bolívar” que se va a usar para efectuar operaciones con el valor ingresado en relación a los productos. 
+                        <br>
+                        <br>
+                        Por otra parte, se da a destacar que para ingresar el nuevo valor debe tener conocimiento acerca de la tasa de cambio en divisa de ese día, por lo tanto, el sistema cuenta con una herramienta ubicada en la parte inferior izquierda la cual le permitirá ingresar a la página de “DolarToday” para ver la tasa de cambio de ese día (Cabe destacar que para usar esta herramienta debe contar con acceso a internet).
+                        <br>
+                        <br>
+                        Al ingresar el valor, el usuario debe tener en cuenta que de colocar letras o caracteres, este no los tomara como datos válidos y nos los registrara; Por otra parte, de dejar el campo [Nuevo Valor] vacío, el sistema lo tomará como un error y deberá intentarlo nuevamente. 
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/valor2.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Al colocar el valor en divisa, pulse sobre el botón “ACEPTAR”. 
+                        <br>
+                        <br>
+                        Cabe acotar, que al cerrar el programa, el sistema tendrá almacenado el ultimo valor de tasa de cambio en divisa que se ingresó, el cual se mostrara en pantalla como “Valor Anterior”, si desea cambiar el valor, solo debe ingresar la tasa de cambio en divisa de ese día en el campo [Nuevo Valor].
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/valor3.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        <h2 class="h2 text-center" style="font-size: 180%;" id="origen">Compañia</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/ECompañia.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana de Compañía consiste en registrar las compañías que usan el programa, donde se tiene el control de la divisa, impuesto que cobra y la utilidad, así como información general sobre la compañía, como lo son el nombre, contacto y dirección.
+                        <br>
+                        <br>
+                        Para poder acceder a la ventana de compañía se requiere ingresar al sistema con un usuario de nivel Administrador o Gerente, la ventana no estará disponible para aquellos usuarios de menor nivel Empleado.
+                        <br>
+                        <br>
+                        Al presionar el botón añadir, se desbloquearan las casillas para ingresar los datos, pudiendo implementar otra compañía si así se desea. 
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/ECompañia1.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Después de ingresar los datos en las casillas, se debe dar click en el botón “Guardar” para poder registrar la compañía, la cual le mostrara una ventana notificando que el registro fue exitoso.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/ECompañia2.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Para modificar los datos de una compañía, se debe dar click en el botón de “Modificar”, lo cual desbloqueara todas las casillas de los datos de la compañía seleccionada en el panel, excepto el Rif que no puede ser modificable.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/ECompañia3.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Si se desea buscar una compañía especifica entre los registros, se debe dar click sobre el botón “Buscar”, lo cual bloqueara todas las casillas de los datos para las compañías y mostrara en la casilla justo arriba de la lista dos opciones para la búsqueda, Rif o Nombre.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/ECompañia4.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Para borrar el registro de una compañía, se debe dar click sobre el boton “Borrar”, mostrando primeramente una notificación donde se confirmara si desea borrar la compañía seleccionada.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/ECompañia5.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Darle click al botón “Sí” mostrara una notificación confirmando la eliminación de los datos y se puede apreciar que en la lista ya no aparecerá la compañía. 
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/ECompañia6.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        <h2 class="h2 text-center" style="font-size: 180%;" id="origen">Usuarios</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eusuario.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana de Usuario se utiliza para registrar y mostrar a los diferentes usuarios que tienen permitido ingresar al sistema a través de la pantalla de inicio, estableciendo un usuario y contraseña para cada uno, así como el nivel de acceso,  además, para tener una mayor certeza de los usuarios que han sido modificados, se muestra una pequeña fila donde reporta la fecha en la que fue modificado un usuario por última vez.
+                        <br>
+                        <br>
+                        Para poder acceder a la ventana de Usuario se requiere ingresar al sistema con un usuario de nivel Administrador, la ventana no estará disponible para aquellos usuarios de menor nivel.
+                        <br>
+                        <br>
+                        Al presionar el botón añadir, se colocara en la lista un nuevo usuario que será totalmente funcional de manera inmediata con el cual poder ingresar al sistema, para esto es obligatorio de llenar los datos de todas las casillas, de lo contrario, una notificación de no dejar los campos vacíos.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eusuario1.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Al establecer todos los datos correctamente, se notificara que el usuario ha sido agregado satisfactoriamente.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eusuario2.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        El botón “Buscar” desbloquea la única casilla bloqueada, permitiendo la búsqueda rápida de los usuarios registrados en el sistema.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eusuario4.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Para borrar el registro de un usuario, se debe dar click sobre el boton “Borrar”, mostrando primeramente una notificación donde se confirmara si desea borrar al usuario seleccionado.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eusuario5.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Darle click al botón “Sí” mostrara una notificación confirmando la eliminación de los datos y se puede apreciar que en la lista ya no aparecerá el usuario. 
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eusuario6.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        <h2 class="h2 text-center" style="font-size: 180%;" id="origen">Clientes</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eclientes.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana de clientes se utiliza para registrar y mostrar a los diferentes clientes que han sido registrados en el sistema, estableciendo su cedula, nombre, número telefónico y dirección.
+                        <br>
+                        <br>
+                        Al presionar el botón añadir, se desbloquearan todas las casillas bloqueadas, permitiendo el ingreso de los datos.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eclientes2.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Al establecer todos los datos correctamente, se notificara que el usuario ha sido agregado satisfactoriamente.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eclientes3.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Si se desea buscar un cliente especifico entre los registros, se debe dar click sobre el botón “Buscar”, lo cual bloqueara todas las casillas de los datos para los clientes y mostrara en la casilla justo arriba de la lista dos opciones para la búsqueda, Nombre o Cedula.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eclientes4.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Para modificar los datos de un cliente, se debe dar click en el botón de “Modificar”, lo cual desbloqueara todas las casillas de los datos del usuario seleccionada en el panel, excepto la Cedula que no puede ser modificable.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eclientes5.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Una vez modificados, se debe hacer click en el botón “Guardar”, lo cual notificara que los cambios fueron realizados satisfactoriamente.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eclientes6.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Para borrar el registro de un cliente, se debe dar click sobre el botón “Borrar”, mostrando primeramente una notificación donde se confirmara si desea borrar al cliente seleccionado.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eclientes7.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Darle click al botón “Sí” mostrara una notificación confirmando la eliminación de los datos y se puede apreciar que en la lista ya no aparecerá el cliente. 
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eclientes8.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        <h2 class="h2 text-center" style="font-size: 180%;" id="origen">Proveedores</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproveedores.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana de proveedores se utiliza para registrar y mostrar a los diferentes proveedores que han sido registrados en el sistema, estableciendo el código con el cual serán registrados, nombre, estatus, teléfono y direccion.
+                        <br>
+                        <br>
+                        Al presionar el botón añadir, se desbloquearan todas las casillas bloqueadas, permitiendo el ingreso de los datos.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproveedores2.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Al establecer todos los datos correctamente, se notificara que el usuario ha sido agregado satisfactoriamente.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproveedores3.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Si se desea buscar un proveedor especifico entre los registros, se debe dar click sobre el botón “Buscar”, lo cual bloqueara todas las casillas de los datos para los clientes y mostrara en la casilla justo arriba de la lista dos opciones para la búsqueda, Nombre o Codigo.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproveedores4.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Para modificar los datos de un proveedor, se debe dar click en el botón de “Modificar”, lo cual desbloqueara todas las casillas de los datos del proveedor seleccionada en el panel, excepto la Codigo que no puede ser modificable.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproveedores5.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Una vez modificados, se debe hacer click en el botón “Guardar”, lo cual notificara que los cambios fueron realizados satisfactoriamente.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproveedores6.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Para borrar el registro de un proveedor, se debe dar click sobre el botón “Borrar”, mostrando primeramente una notificación donde se confirmara si desea borrar al proveedor seleccionado.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproveedores7.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Darle click al botón “Sí” mostrara una notificación confirmando la eliminación de los datos y se puede apreciar que en la lista ya no aparecerá el cliente. 
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproveedores8.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        <h2 class="h2 text-center" style="font-size: 180%;" id="origen">Productos</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproductos.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana de productos se utiliza para registrar y mostrar a los diferentes productos que han sido registrados en el sistema, estableciendo el código con el cual serán registrados, descripción, unidad y ubicación.
+                        <br>
+                        <br>
+                        Las casillas con los nombres de “Existencia”, “Precio” y “Costo” son utilizadas en la pantalla de entradas y salidas, debido a que primero se debe de registrar la existencia de un producto.
+                        <br>
+                        <br>
+                        Al presionar el botón añadir, se desbloquearan todas las casillas bloqueadas, permitiendo el ingreso de los datos.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproductos2.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Al establecer todos los datos correctamente, se notificara que el usuario ha sido agregado satisfactoriamente.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproductos3.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Si se desea buscar un producto especifico entre los registros, se debe dar click sobre el botón “Buscar”, lo cual bloqueara todas las casillas de los datos para los clientes y mostrara en la casilla justo arriba de la lista dos opciones para la búsqueda, Descripción o Código.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproductos4.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Para modificar los datos de un producto, se debe dar click en el botón de “Modificar”, lo cual desbloqueara todas las casillas de los datos del proveedor seleccionada en el panel, excepto la Código que no puede ser modificable.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproductos5.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Una vez modificados, se debe hacer click en el botón “Guardar”, lo cual notificara que los cambios fueron realizados satisfactoriamente.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproductos6.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Para borrar el registro de un producto, se debe dar click sobre el botón “Borrar”, lo cual eliminara el producto seleccionado de manera inmediata.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Eproductos7.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        <h2 class="h2 text-center" style="font-size: 180%;" id="origen">Entrada / Salida</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EnSa.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana Entrada / Salida es para registrar la entrada y salida de productos, la entrada se refiere a la compra de productos a proveedores, y la salida a alguna perdida accidental dentro de la empresa, ya sea porque un producto se extravió o se dañó.
+                        <br>
+                        <br>
+                        Al presionar el botón añadir, se desbloqueara la casilla al extremo derecho arriba bloqueada, permitiendo elegir el proveedor, al ser uno elegido, se mostrara el código y el nombre. 
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EnSa2.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EnSa3.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Por consiguiente, se debe de escoger si se desea registrar entrada o salida en la casilla de nombre “Tipo de Movimiento”.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EnSa4.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Se le da click al botón “Guardar” para añadir el registro satisfactoriamente.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EnSa5.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Ahora se debe de especificar el producto para registrar, especificando la cantidad.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EnSa6.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Luego, se debe de dar click en el boton al extremo derecho debajo de nombre “Confirmar” para registrar la entrada o salida del producto del proveedor.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EnSa7.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Para poder registrar otra entrada o salida, se debe de dar click en el botón “Cancelar”, lo cual reiniciara la ventana a su estado base.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EnSa8.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        <h2 class="h2 text-center" style="font-size: 180%;" id="origen">Facturación</h2>
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/FAC.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La ventana de Facturacion es para registrar las facturas, esta reflejara los datos de una transaccion mercantil, realiza los calculos en base al producto que se registre tomando en cuenta su precio, el IVA y la tasa de la divisa, y contiene información como: Observacion, total a pagar, la fecha en que se emitio la factura y el usuario que la creo.
+                        <br>
+                        <br>
+                        Al presionar el botón añadir, se desbloqueara las casillas al extremo derecho arriba bloqueada, permitiendo elegir al cliente en la ventana que los muestra o pudiendo buscarlos introduciendo la Cedula/Rif y/o el nombre.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Facturacion2.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Luego de que se haya elegido un cliente, se puede añadir una observacion.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Facturacion3.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Para añadir la factura de cliente, se debe de presionar el boton guardar ubicado en la parte de abajo, lo cual mostrara una notifcacion mostrando que el registro fue añadido.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Facturacion4.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La factura siempre comienza sin ningun detalle, para añadirlos, primero se debe seleccionar en la lista la factura que queremos modificar.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Facturacion5.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Ahora, debemos de escoger el producto y la cantidad que queremos añadir a la factura.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Facturacion6.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Y por ultimo, hacemos click sobre el boton confimar para añadir el producto deseado.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Facturacion7.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Mientras mas productos añadamos a una factura, el total sera mostrado en la misma.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Facturacion8.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Si se desea añadir otra factura mas, debemos de presionar el boton cancelar, lo cual hara que ya no se este modificando la factura y podamos añadir una nueva si se desea.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/Facturacion9.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        <h1 class="h2 text-center py-5" style="font-size: 210%;">Descripcion de salida de datos</h1>
+                        <h2 class="h2 text-center pb-5" style="font-size: 180%;">Listado de entrada y salida</h2>
+                        El Listado de entrada y salida es donde se generan los reportes de los movimientos de entradas y salidas dependiendo del rango de fecha que se haya elegido.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EYSR.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Al darle click al boton ejecutar, se generará un reporte en la misma ventana.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EYSR2.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        En el reporte se puede observar que este muestra el numero del movimiento, el codigo del proveedor, Nombre del proveedor, Fecha del movimiento, tipo y ultima modificacion.
+                        <br>
+                        <br>
+                        Ademas de la informacion antes dicha, el reporte trae consigo una variedad de botones que cumplen distintas funciones.
+                        <br>
+                        <br>
+                        El boton que tiene la imagen de unos binoculares, permite buscar cualquier texto en el reporte.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EYSR3.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        El boton que tiene la imagen de una lupa, permite hacer zoom en el reporte.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EYSR4.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La barra para introducir texto permite buscar la pagina que se quiere mostrar si es que existe mas de una.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EYSR5.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        El boton que tiene la imagen de dos hojas de papel, permite copiar el reporte en el portapapeles.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EYSR6.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        El boton que tiene la imagen de dos flechas, permite actualizar el reporte, al hacer click, este abre una ventana la cual permite introducir el rango de fechas que se quiere visualizar.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EYSR7.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        El boton que tiene la imagen de una hoja de papel siendo impresa, permite imprimir el reporte, este abre una ventana con las opciones para la impresion y da a escoger la impresora.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EYSR8.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        El ultimo boton que tiene la imagen de una flecha y un disco duro, permite exporte el reporte al computador en cualquiero formato de lectura, mostrando una ventana donde se puede escoger el lugar de guardado y el formato. 
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/EYSR9.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        <h2 class="h2 text-center pb-5" style="font-size: 180%;">Listado de facturas</h2>
+                        El Listado de facturas es donde se generan los reportes de las facturas dependiendo del rango de fecha que se haya elegido.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/FR.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        Al darle click al boton procesar, se generará un reporte en la misma ventana.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/FR2.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        En el reporte se puede observar que este muestra el numero de la factura, la cedula del cliente, la observacion, el total, la fecha de emision y el usuario que creo la factura.
+                        <br>
+                        <br>
+                        Ademas de la informacion antes dicha, el reporte trae consigo una variedad de botones que cumplen distintas funciones.
+                        <br>
+                        <br>
+                        El boton que tiene la imagen de unos binoculares, permite buscar cualquier texto en el reporte.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/FR3.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        El boton que tiene la imagen de una lupa, permite hacer zoom en el reporte.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/FR4.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        La barra para introducir texto permite buscar la pagina que se quiere mostrar si es que existe mas de una.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/FR5.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        El boton que tiene la imagen de dos hojas de papel, permite copiar el reporte en el portapapeles.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/FR6.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        El boton que tiene la imagen de dos flechas, permite actualizar el reporte, al hacer click, este abre una ventana la cual permite introducir el rango de fechas que se quiere visualizar.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/FR8.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        El boton que tiene la imagen de una hoja de papel siendo impresa, permite imprimir el reporte, este abre una ventana con las opciones para la impresion y da a escoger la impresora.
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/FR9.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        El ultimo boton que tiene la imagen de una flecha y un disco duro, permite exporte el reporte al computador en cualquiero formato de lectura, mostrando una ventana donde se puede escoger el lugar de guardado y el formato. 
+                        <div class="col-xl-12 text-center">
+                            <img src="Imagenes/FR10.png" alt="" class="img-fluid px-5 py-5">
+                        </div>
+                        <h1 class="h2 text-center py-5" style="font-size: 210%;">Conclusion</h1>
+                        Es muy común en el caso de empresas relativamente grandes y posicionadas en el mercado, que la información no fluye como debiera aunque se tengan costosos software. Dichas compañías se enorgullecen en decir que tienen los mejores software del mercado, pero sin embargo son innumerables los casos en que en estas empresas con costosos software, costosos sistemas de computo y veloces redes, la velocidad de circulación de la información, de los procesos internos y la calidad de la información recuperada no siempre es de la calidad que sus directivos espera. No siempre lo mas costoso es lo mejor. En ocasiones es preferible un sistema menos sofisticado pero con un grupo de empleados que a todo nivel de la organización, incluyendo sus dueños, están convencidos de la importancia de los procesos, los métodos y la información que manejan, puede ser un sistema mucho mas ágil y la calidad de la información mucho mas alta, por lo tanto la capacidad de reacción de esta empresa ante cambios en el mercado es alta en momentos críticos. Es así como los peces chicos se pueden comer a los mas grandes y feroces, pues estos suelen ser mas organizados y suelen tener la información adecuada en el momento clave y mantenerse preparados para el cambio, este software y manual fueron creados con este tipo de filosofia en mente, un sistema sencillo y practica de manejar.
                 </div>
                 <!-- / CONTENIDO -->
             </div>
